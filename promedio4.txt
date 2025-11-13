@@ -1,0 +1,17 @@
+fun main() {
+    // Crear un arreglo de 5 notas
+    val notas = IntArray(5)
+
+    // Asignar valores a cada nota
+    notas[0] = 22
+    notas[1] = 14
+    notas[2] = 19
+    notas[3] = 16
+    notas[4] = 23
+
+    // Mostrar las notas
+    println("Notas de los estudiantes:")
+    for (i in notas.indices) {
+        println("Estudiante ${i + 1}: ${notas[i]}")
+    }
+}

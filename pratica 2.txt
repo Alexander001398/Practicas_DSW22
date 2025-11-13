@@ -1,0 +1,23 @@
+fun main() {
+    // Crear un arreglo usando arrayOf
+    val numbers = arrayOf(10, 20, 30, 40, 50)
+    println("Arreglo de números: ${numbers.joinToString()}")
+
+    // Crear un arreglo usando el constructor Array
+    val cubes = Array(5) { i -> (i + 1) * (i + 1) * (i + 1) }
+    println("Cubos del 1 al 5: ${cubes.joinToString()}")
+
+    // Crear un arreglo de Strings nulos
+    val animals = arrayOfNulls<String>(6)
+    animals[0] = "Perro"
+    animals[1] = "Gato"
+    animals[2] = "León"
+    animals[3] = "Tigre"
+    animals[4] = "Elefante"
+    animals[5] = "Zorro"
+
+    println("\nAnimales del zoológico:")
+    for (i in animals.indices) {
+        println("${animals[i]} está en la posición ${i + 1}")
+    }
+}

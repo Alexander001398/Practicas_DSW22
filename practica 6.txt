@@ -1,0 +1,19 @@
+fun main() {
+    // Variable que puede ser nula
+    var name: String? = "Roberto"
+
+    // Safe call (?.)
+    println("Longitud del nombre: ${name?.length}")
+
+    // Elvis operator (?:)
+    name = null
+    val length = name?.length ?: -1
+    println("Longitud del nombre (con Elvis): $length")
+
+    // Not Null Assertion (!!)
+    var textExample: String? = "Mensaje de prueba"
+    println("Longitud segura: ${textExample!!.length}")
+
+    textExample = null
+    // println(textExample!!.length) // ← Esto lanzaría una excepción si lo descomentas
+}
